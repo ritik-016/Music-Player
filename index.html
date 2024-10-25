@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dcb9484917.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="./project.img" class="song-img">
+            <h1>Dil se Dil</h1>
+            <p>Mandar Cholkar, Shashwat Singh, and Vishal Chandrasekhar</p>
+            <audio controls id="song" src="./Dil Se Dil - Official Music Video  Sita Ramam  Vishal Chandrashekhar  Shashwat Singh  Mandar C..mp3"></audio>
+            <!-- <input type="range" value="0" class="progress"> -->
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
